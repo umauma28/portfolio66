@@ -1,0 +1,181 @@
+"<!DOCTYPE html>
+<html>
+<head>
+    <title>Your Name - Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 3rem 0;
+            position: relative; /* Add this */
+        }
+
+        .header-content h1 {
+            font-size: 2.5rem;
+        }
+
+        /* Add styles for the round profile picture */
+        .profile-picture {
+            width: 100px; /* Adjust the size as need */
+            height: 100px;
+            background-color: orangered;
+            border-radius: 95%; /* Create a circular shape */
+            object-fit: cover; /* To ensure the image fills the circular area */
+            position: absolute; /* Add this */
+            top: 75px; /* Adjust top position as needed */
+            left: 75px; /* Adjust left position as needed */
+        }
+
+        nav {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 30px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .section-content {
+            background-color: #fff;
+            padding: 2rem;
+            margin: 1rem;
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .download-button {
+            background-color: #333;
+            color: #fff;
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            border-radius: 20px;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        .download-button:hover {
+            background-color: #555;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background-color: #333;
+            color: #fff;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+    </style>
+    </head>
+    <body>
+        <header>
+            <div class="header-content">
+                <!-- Add your profile picture here -->
+                <img src="uma.jpg" alt="Your Profile Pocture" class="profile-picture">
+                <h1>Hi,I am Uma</h1>
+                <p>I'm Student of UG Computer science</p>
+            </div>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Education">Education</a></li>
+                <li><a href="#Skills">Skills</a></li>
+                <li><a href="#Projects">Projects</a></li>
+                <li><a href="#Resume">Resume</a></li>
+            </ul>
+        </nav>
+
+        <section id="About">
+            <div class="section-content">
+                <h2>About Me</h2>
+                <p>Hello Everyone! I'am Uma and i'm a final year of computer student.</p>
+            </div>
+        </section>
+
+        <section id="Education">
+            <div class="section-content">
+                <h2>Education</h2>
+                <h2>School</h2>
+                <p>i am studied Government Higher Secondary school(Arimalam).</p><br>
+                <h2>Degree</h2>
+                <p>Kalaignar karunanidhi government arts college for women(A),pudukkottai.</p>
+                <p>BSc., Computer Science</p>
+            </div>
+            
+        </section>
+
+        <section id="skills">
+            <div class="section-content">
+            <h2>Skills</h2>
+            <ul>
+                <li>Ms Office</li>
+                <li>Computer Operator</li>
+                <li>Web development</li>
+                <li>Tally</li>
+                <li>English type writing in certificate</li>
+            </ul>
+            </div>
+        </section>
+
+        <section id="Projects">
+            <div class="section-content">
+                <h2>Projects</h2>
+                <ul>
+                    <li><a href="sample calculate.html.html">Projects</a></li>
+
+                 </ul>
+            </div>
+        </section>
+
+        <section id="Resume">
+            <center>
+            <div class="section-content">
+                <h2>Bio Data</h2>
+                <a href="io.pdf" class="download-button">Download CV</a>
+            </div>
+            </center>
+        </section>
+
+        <footer>
+            <p>&copy; 2023 Subritha</p>
+        </footer>
+
+        <script>
+            // Smooth scrolling to section when clicking on navigation links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e)) {
+                    e.preventDefault();
+
+                    const targetId = this.getAttribute('href').substring(1);
+                    const targeElement = document.getElementById(targetId);
+
+                }
+            })
+        </script>
+    </body>
+</html>"
